@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Starting your Homework - Cheat Sheet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+    <nav class="nav">
+        <ul>
+            <li>
+                <a href="#vscode">Starting from Visual Studio Code</a>
+                <a href="#github">Starting from GitHub</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="section">
+            <h1><a class="anchor-link" name="vscode">#</a>Starting from Visual Studio Code</h1>
+            <small>This assumes Visual Studio Code is already open and you are inside the dev folder we set up on the first day of class.</small>
+            <small>Additionally, these instructions will work with another code editor or an HTML template from the web, it is just that the default CSS and JS files will have different names.</small>
+            <ol>
+                <li>Navigate to the folder you want to put your homework in.</li>
+                    <ul>
+                        <li><strong>Labs</strong> for labs</li>
+                        <li><strong>Exercises</strong> for Exercises</li>
+                        <li><strong>Code Alongs</strong> for Code alongs</li>
+                        <li><strong>Activities</strong> for Activities (if you set one up)</li>
+                    </ul>
+                <li>Right click on that folder and select <span class="has-text-underline">Add Folder"</span></li>
+                <li>Enter the name of the project</li>
+                    <ul>
+                        <li>e.g. "DOM-Exercise-01", "jQuery-Lab-Part-01", etc.</li>
+                    </ul>
+                <li>Press Enter</li>
+                <li>Once the folder has been created, right click on it and select <span class="has-text-underline">New File</span></li>
+                <li>Type <span class="has-text-underline">index.html</span> then press Enter</span></li>
+                <li>Go into the <span class="has-text-underline">index.html</span> file you just created</li>
+                <li>Type the letters "html" and you will see a menu pop up right where you are typing. Choose second option with a square that has a dotted bottom (representing a code block) and it will insert an HTML template into the file for you</li>
+                    <ul>
+                        <li>Either navigate to it using your arrow keys and pressing enter OR</li>
+                        <li>Click it with your mouse</li>
+                    </ul>
+                <li>If you will not be using CSS or JavaScript</li>
+                <ol>
+                    <li>Comment out or remove completely the &lt;script&gt; tag that loads <span class="has-text-underline">main.js</span></li>
+                    <li>Comment out or remove completely the &lt;link&gt; tag that loads <span class="has-text-underline">main.css</span></li>
+                </ol>
+                <li>If you will be using Javascript...</li>
+                    <ol>
+                        <li>Go into the <span class="has-text-underline">index.html</span> file and move the script tag that loads <code>main.js</code> line down to just before the closing &lt;/body&gt; tag</li>
+                        <li>Right click the top folder of your project and select <span class="has-text-underline">New File</span> again</li>
+                        <li>Type <span class="has-text-underline">main.js</span> and hit Enter</li>
+                    </ol>
+                <li>If you will be using CSS...</li>
+                    <ol>                        
+                        <li>Right click the top folder of your project and select <span class="has-text-underline">New File</span> again</li>
+                        <li>Type <span class="has-text-underline">main.css</span> and hit Enter</li>
+                    </ol>
+                <li>Now, right click on the top folder of your project and select "Open in Terminal"</li>
+                <li>Within the terminal, type <code>git init</code> and hit enter</li>
+                <li>Open up a web browser and head to GitHub</li>
+                <li>Create a new repository there that has the same name as your project's top folder</li>
+                <li>After it has been created, copy the link under <strong>Quick setup — if you’ve done this kind of thing before</strong></li>
+                    <ul>
+                        <li>Note that you can just click the button at the end of the URL to copy it, you don't have to highlight it!</li>
+                    </ul>
+                <li>Back in Visual Studio code, type <code>git remote add origin </code>then paste the URL. Hit enter</li>
+                    <ul>
+                        <li>Make sure to include the space after origin and before the URL!</li>
+                    </ul>
+                <li>Next, type <code>git status</code> and hit enter to ensure your project is ready for git</li>
+                <li>If you've been following these steps,  the file(s) you've added should be in red. That's because they need to be added to git to be tracked</li>
+                <li>Do this by typing <code>git add . </code> and hitting enter</li>
+                    <ul>
+                        <li>The period means "all"</li>
+                    </ul>
+                <li>Type <code>git status</code> again, and your file(s) should now be in green</li>
+                <li>Next, type <code>git commit -a --m "init commit" </code> and hit enter</li>
+                    <ul>
+                        <li>The -a means all</li>
+                        <li>The --m means you're going to add a message</li>
+                        <li>The " is the start and end of your <em>commit</em> message</li>
+                    </ul>
+                <li>Type <code>git status </code></li>
+            </ol>
+        </section>
+        <section class="section">
+            <h1><a class="anchor-link" name="github">#</a>Starting from GitHub</h1>
+        </section>
+    </main>
+</body>
+</html>
