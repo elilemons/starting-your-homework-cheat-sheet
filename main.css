@@ -1,6 +1,34 @@
-.section {
-    height: 100vh;
+html {
+    font-size: 22px;
 }
-.has-text-underline {
-    text-decoration: underline;
+ul.menu-list > li:not(.inner-list):before {
+    content: '\02605';
+    color: goldenrod;
+    margin-inline-start: -40px;
+    margin-inline-end: .25em;
+}
+ul.menu-list > li:hover:before {
+    color: yellow;
+}
+.menu-list li ul li{
+    content: '';
+}
+.anchor-link {
+    margin-top: 33px;
+    margin-inline-start: -40px;
+    margin-inline-end: .25em;
+}
+.menu-list {
+    font-size: 1.5rem;
+}
+.menu-list > li {
+    padding: .25em;
+}
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background:white;
+    z-index: 1;
+    margin-bottom: 33px;
 }
